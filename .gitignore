@@ -28,16 +28,36 @@ coverage.xml
 .mypy_cache/
 .ruff_cache/
 
-# ── Environment ───────────────────────────────────────────────
+# ── Environment / secrets (NEVER commit) ──────────────────────
 .env
 .env.local
 .env.*.local
+.env.example
+backend/.env
+**/.env
+**/.env.*
 
-# ── Logs ──────────────────────────────────────────────────────
+# ── Private docs (personal plans, keep local only) ─────────────
+docs/
+
+# ── Logs & runtime data ────────────────────────────────────────
+logs/
 log.jsonl
 *.log
+*.jsonl
+data/
+*.sqlite
+*.sqlite3
+*.db
 
-# ── IDE ───────────────────────────────────────────────────────
+# ── Keys / credentials ─────────────────────────────────────────
+*.pem
+*.key
+*.p12
+credentials*
+secrets*
+
+# ── IDE ────────────────────────────────────────────────────────
 .idea/
 .vscode/
 *.swp
