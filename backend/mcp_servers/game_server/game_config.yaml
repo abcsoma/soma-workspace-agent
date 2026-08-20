@@ -1,0 +1,16 @@
+# Game configuration - add new games here for extensibility
+games:
+  dota2:
+    display_name: "Dota 2"
+    api_base: "https://api.opendota.com/api"
+    tools:
+      - get_player_recent_matches
+      - get_match_details
+      - get_hero_stats
+      - get_pro_matches
+  cs2:
+    display_name: "CS2"
+    api_base: "https://api.steampowered.com"
+    tools:
+      - get_tournament_results
+      - get_player_stats

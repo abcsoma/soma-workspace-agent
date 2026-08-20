@@ -1,0 +1,1 @@
+"""soma-workspace-agent package."""
